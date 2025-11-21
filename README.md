@@ -152,11 +152,4 @@ ros2 run klppoint uts_nav launch.py
 
 ## You're Ready!
 
-You now have:
 
--   RViz visualization running (remote or local)
--   Localization activated
--   Navigation package ready
--   Custom nodes working for robot target pose and task
-
-🎉 **Happy robot testing!**

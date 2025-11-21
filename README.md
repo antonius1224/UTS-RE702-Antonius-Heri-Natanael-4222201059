@@ -25,20 +25,20 @@ This puts your PC on the same network as TurtleBot4.
 ### Create a workspace:
 
 ``` bash
-mkdir -p ~/turtlebot4_delivery/src
-cd ~/turtlebot4_delivery/src
+mkdir -p ~/klp1/src
+cd ~/klp1/src
 ```
 
 ### Clone the GitHub repository:
 
 ``` bash
-git clone https://github.com/MarcellinoAcel/pose_nav_turtle.git
+git clone https://github.com/antonius1224/UTS-RE702-Antonius-Heri-Natanael-4222201059.git
 ```
 
 ### Build using colcon:
 
 ``` bash
-cd ~/turtlebot4_delivery
+cd ~/klp1
 colcon build
 ```
 
@@ -87,14 +87,14 @@ ssh ubuntu@192.168.185.3
 Source workspace:
 
 ``` bash
-cd ~/turtlebot4_delivery
+cd ~/klp1
 source install/setup.bash
 ```
 
 Run localization:
 
 ``` bash
-ros2 launch pose_nav_turtle localization.launch.py map:=src/pose_nav_turtle/maps/map_uts_kel1.yaml
+ros2 launch klppoint localization.launch.py map:=src/klp1/maps/mapklp1.yaml
 ```
 
 In RViz:\
@@ -113,14 +113,14 @@ ssh ubuntu@192.168.185.3
 Enter workspace:
 
 ``` bash
-cd ~/turtlebot4_delivery
+cd ~/klp1
 source install/setup.bash
 ```
 
 Launch your navigation node:
 
 ``` bash
-ros2 launch pose_nav_turtle run_nav.launch.py
+ros2 launch klppoint run_nav.launch.py
 ```
 
 Then test navigation using **Nav2 Goal** in RViz.
@@ -138,14 +138,14 @@ ssh ubuntu@192.168.185.3
 Source workspace:
 
 ``` bash
-cd ~/turtlebot4_delivery
+cd ~/klp1
 source install/setup.bash
 ```
 
 Run your custom node:
 
 ``` bash
-ros2 run pose_nav_turtle pose_nav_turtle
+ros2 run klppoint uts_nav launch.py
 ```
 
 ------------------------------------------------------------------------
